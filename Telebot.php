@@ -8,9 +8,14 @@ class Telebot {
   protected CurlHandle|false $curl;
   
   final public static function instance() {
-    if(self::$_instance == null)
-			self::$_instance = new self();
+    if(self::$_instance == null) {
+    	self::$_instance = new self();
+    }
 		return self::$_instance;
+  }
+
+  final public function connect() {
+  	
   }
 
 }
